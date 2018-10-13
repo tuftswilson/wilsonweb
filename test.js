@@ -21,8 +21,13 @@ test('responds to requests', (t) => {
       // Successful response
       t.equal(response.statusCode, 200);
       // Assert content checks
+<<<<<<< HEAD
       t.notEqual(body.indexOf("<title>Noku</title>"), -1);
       t.notEqual(body.indexOf("Gettoku"), -1);
+=======
+      t.notEqual(body.indexOf("<title>Node.js Getting Started on Heroku</title>"), -1);
+      t.notEqual(body.indexOf("Wilson House"), -1);
+>>>>>>> 6e1bdd0ccb5929f59c395e667ae6633716c25333
     });
   });
 });
