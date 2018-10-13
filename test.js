@@ -22,6 +22,7 @@ test('responds to requests', (t) => {
       t.equal(response.statusCode, 200);
       // Assert content checks
       t.notEqual(body.indexOf("<title>Node.js Wilson House</title>"), -1);
+      t.notEqual(body.indexOf("<title>Node.js Getting Started on Heroku</title>"), -1);
       t.notEqual(body.indexOf("Wilson House"), -1);
     });
   });
